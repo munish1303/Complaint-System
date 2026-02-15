@@ -102,7 +102,7 @@ CREATE TABLE complaints (
 
 1.  **Clone the Repository**
     ```bash
-    git clone [https://github.com/techieRahul17/OnlineComplaintSystem.git](https://github.com/techieRahul17/OnlineComplaintSystem.git)
+    git clone [https://github.com/munish1303/Complaint-System](https://github.com/munish1303/Complaint-System)
     ```
 
 2.  **Configure Database**
