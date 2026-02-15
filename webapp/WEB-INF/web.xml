@@ -1,0 +1,57 @@
+<web-app>
+
+<servlet>
+ <servlet-name>RegisterServlet</servlet-name>
+ <servlet-class>com.complaint.servlet.RegisterServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+ <servlet-name>RegisterServlet</servlet-name>
+ <url-pattern>/RegisterServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+ <servlet-name>TrackServlet</servlet-name>
+ <servlet-class>com.complaint.servlet.TrackServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+ <servlet-name>TrackServlet</servlet-name>
+ <url-pattern>/TrackServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+ <servlet-name>LoginServlet</servlet-name>
+ <servlet-class>com.complaint.servlet.LoginServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+ <servlet-name>LoginServlet</servlet-name>
+ <url-pattern>/LoginServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+ <servlet-name>LogoutServlet</servlet-name>
+ <servlet-class>com.complaint.servlet.LogoutServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+ <servlet-name>LogoutServlet</servlet-name>
+ <url-pattern>/LogoutServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+ <servlet-name>AdminDashboardServlet</servlet-name>
+ <servlet-class>com.complaint.servlet.AdminDashboardServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+ <servlet-name>AdminDashboardServlet</servlet-name>
+ <url-pattern>/AdminDashboardServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+ <servlet-name>UpdateStatusServlet</servlet-name>
+ <servlet-class>com.complaint.servlet.UpdateStatusServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+ <servlet-name>UpdateStatusServlet</servlet-name>
+ <url-pattern>/UpdateStatusServlet</url-pattern>
+</servlet-mapping>
+
+</web-app>

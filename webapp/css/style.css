@@ -1,0 +1,188 @@
+body{
+margin:0;
+font-family:Poppins, sans-serif;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+
+/* premium gradient background */
+background:
+radial-gradient(circle at 20% 20%, rgba(255,255,255,0.15), transparent 40%),
+radial-gradient(circle at 80% 80%, rgba(255,255,255,0.12), transparent 40%),
+linear-gradient(135deg,#4facfe,#00f2fe,#667eea,#764ba2);
+
+overflow:hidden;
+}
+
+/* floating glow effects */
+body::before{
+content:"";
+position:absolute;
+width:600px;
+height:600px;
+background:radial-gradient(circle, rgba(255,255,255,0.25), transparent 70%);
+top:-200px;
+left:-200px;
+animation:floatGlow 12s infinite alternate ease-in-out;
+}
+
+body::after{
+content:"";
+position:absolute;
+width:500px;
+height:500px;
+background:radial-gradient(circle, rgba(255,255,255,0.18), transparent 70%);
+bottom:-200px;
+right:-200px;
+animation:floatGlow 14s infinite alternate ease-in-out;
+}
+
+@keyframes floatGlow{
+from{transform:translateY(0px) translateX(0px);}
+to{transform:translateY(40px) translateX(30px);}
+}
+
+/* CARD */
+.card{
+background:rgba(255,255,255,0.18);
+backdrop-filter:blur(18px);
+padding:42px;
+border-radius:24px;
+width:380px;
+border:1px solid rgba(255,255,255,0.25);
+
+box-shadow:
+0 20px 50px rgba(0,0,0,0.25),
+inset 0 0 20px rgba(255,255,255,0.2);
+
+animation:fade 0.7s ease;
+transition:.35s;
+}
+
+.card:hover{
+transform:translateY(-6px) scale(1.01);
+box-shadow:0 35px 70px rgba(0,0,0,0.35);
+}
+
+@keyframes fade{
+from{opacity:0;transform:translateY(25px);}
+to{opacity:1;transform:translateY(0);}
+}
+
+h2{
+text-align:center;
+margin-bottom:28px;
+color:#1f2937;
+font-weight:600;
+letter-spacing:.5px;
+}
+
+/* FORM */
+label{
+font-size:14px;
+font-weight:500;
+display:block;
+margin-top:16px;
+color:#374151;
+}
+
+input,select,textarea{
+width:100%;
+padding:12px;
+margin-top:6px;
+border-radius:12px;
+border:1px solid rgba(0,0,0,0.1);
+font-family:Poppins;
+font-size:14px;
+transition:.25s;
+background:rgba(255,255,255,0.9);
+}
+
+input:focus,select:focus,textarea:focus{
+border-color:#4facfe;
+background:white;
+outline:none;
+box-shadow:0 0 0 3px rgba(79,172,254,0.25);
+}
+
+textarea{
+resize:none;
+height:85px;
+}
+
+/* BUTTON */
+button{
+width:100%;
+margin-top:26px;
+padding:14px;
+background:linear-gradient(120deg,#667eea,#764ba2,#4facfe);
+background-size:200% auto;
+border:none;
+color:white;
+font-size:16px;
+border-radius:14px;
+cursor:pointer;
+transition:.35s;
+font-weight:600;
+letter-spacing:.5px;
+}
+
+button:hover{
+background-position:right center;
+transform:translateY(-2px);
+box-shadow:0 15px 30px rgba(0,0,0,0.3);
+}
+
+button:active{
+transform:scale(.97);
+}
+
+/* LINKS */
+.links{
+text-align:center;
+margin-top:22px;
+}
+
+.links a{
+display:block;
+text-decoration:none;
+margin:9px 0;
+color:#1d4ed8;
+font-weight:500;
+transition:.25s;
+}
+
+.links a:hover{
+color:#1e40af;
+transform:translateX(3px);
+}
+
+/* LOGIN */
+.login-card{
+width:340px;
+text-align:center;
+}
+
+.login-card input{
+text-align:center;
+}
+
+/* TRACK */
+.track-card{
+width:360px;
+text-align:center;
+}
+
+.track-card input{
+text-align:center;
+letter-spacing:1px;
+}
+
+/* MOBILE */
+@media(max-width:420px){
+.card{
+width:90%;
+padding:30px;
+}
+}
